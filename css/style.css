@@ -12,12 +12,13 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 10px;
+    padding: 12px;
 }
 
 .nav-links {
     margin: 0 10px;
     font-size: 13px;
+    cursor: pointer;
 }
 
 .nav-links > button {
@@ -31,6 +32,10 @@ body {
     height: 35px;
     color: #fff;
     font-size: 14px;
+}
+
+.nav-links > button:hover {
+    box-shadow: 2px 2px 2px 2px #1a73e8;
 }
 
 #main {
@@ -48,11 +53,31 @@ body {
     outline: 0;
     border: 0;
     border: 1px solid #cfcfcf;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 50px;
+    padding-right: 20px;
     font-size: 16px;
     margin-bottom: 30px;
 }
+
+.search-icons {
+    position: absolute;
+}
+
+.icons {
+    width: 22px;
+    height: 22px;
+}
+
+.search-icons#one {
+    margin-left: 20px;
+    padding: 12px 0;
+}
+
+.search-icons#two {
+    margin-left: -45px;
+    padding: 12px 0;
+}
+
 
 #google-search-btns {
     display: flex;
@@ -66,10 +91,17 @@ body {
     font-size: 14px;
     padding: 10px 15px;
     margin: 5px;
+    border-radius: 3px;
+}
+
+#google-search-btns .btn:hover {
+    box-shadow: 2px 2px 2px #929292;
 }
 
 small {
     margin-top: 20px;
+    text-align: center;
+    padding: 10px 15px;
 }
 
 small a {
@@ -86,14 +118,15 @@ footer {
     left: 0;
     bottom: 0;
     right: 0;
-    background-color: #e2e2e2;
-    color: #838383;
+    background-color: #eeeeee;
+    color: #929292;
 }
 
 footer h3 {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 500;
-    padding: 10px 30px;
+    padding: 15px 30px;
+    border: 1px solid #dfdfdf;
 }
 
 #footer-links {
@@ -109,4 +142,73 @@ footer h3 {
 
 #right-links span {
     margin-left: 35px;
+}
+
+@media(max-width: 700px){
+    #google-search-input {
+        max-width: 400px;
+    }
+}
+
+@media(max-width: 515px) {
+    #google-search-input {
+        max-width: 300px;
+    }
+}
+
+@media(max-width: 412px) {
+    #google-search-input {
+        max-width: 260px;
+    }
+
+    #main {
+        margin: 20px 5%;
+    }
+
+}
+
+@media(max-width: 320px) {
+    #google-search-input {
+        max-width: 220px;
+        height: 35px;
+    }
+
+    #main .logo {
+        width: 80px;
+        height: 80px;
+        object-fit: contain;
+        margin-bottom: 0px;
+    }
+
+    .icons {
+        width: 20px;
+        height: 20px;
+    }
+
+    .search-icons#one {
+        margin-left: 15px;
+        padding: 10px 0;
+    }
+
+    .search-icons#two {
+        margin-left: -40px;
+        padding: 10px 0;
+    }
+
+    .nav-links {
+        font-size: 12px;
+    }
+
+    .nav-links>button {
+        font-size: 12px;
+    }
+
+    footer h3 {
+        font-size: 12px;
+    }
+
+    #footer-links {
+        font-size: 12px;
+    }
+
 }
