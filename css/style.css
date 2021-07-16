@@ -19,6 +19,7 @@ a {
 }
 
 #nav-bar {
+  position: relative;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -93,6 +94,7 @@ a {
 }
 
 #google-search-btns {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -112,6 +114,7 @@ a {
 }
 
 small {
+  position: relative;
   margin-top: 20px;
   text-align: center;
   padding: 10px 15px;
