@@ -15,6 +15,7 @@ a {
 
 #wrapper {
   position: relative;
+  bottom: 0;
 }
 
 #nav-bar {
